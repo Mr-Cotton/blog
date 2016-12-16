@@ -1,0 +1,13 @@
+%h1{:class => "blog", :id => "message",} Welcome to Colton's Blog!
+
+%html
+  %div{id: "post", class: "post"}
+    %p author:
+    %p title:
+    %p text:
+  %br
+
+  %form{:action => "new_post", :method => "get"}
+    %br
+      %div{id: "new_post_button"}
+        %input{:type => "submit", :id => "new_post", :value => "New"}

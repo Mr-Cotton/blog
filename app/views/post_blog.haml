@@ -1,0 +1,14 @@
+%b{:class => "blog", :id => "message"} Creates a blog
+%html
+%form{:action => "post_blog", :method => "post"}
+  %br
+    Author:
+    %input{:type => "text", :name => "author"}
+  %br
+    Title:
+    %input{:type => "text", :name => "title"}
+  %br
+    Content:
+    %input{:type => "textarea", :name => "textarea"}
+  %br
+    %input{:type => "submit", :id => "submit", :value => "submit"}

@@ -1,0 +1,16 @@
+require 'page-object'
+require 'data_magic'
+include PageObject::PageFactory
+
+class PostPage
+  include PageObject
+  include DataMagic
+
+  page_url 'http://localhost:4567/post_blog'
+
+  text_field(:author, name: 'author')
+  text_field(:date, name: 'date')
+  text_field(:title, name: 'title')
+  text_area(:post, name: 'post')
+  button(:submit, id: 'Cotton Blog')
+end
