@@ -31,8 +31,7 @@ post '/blog' do
 end
 
 get '/view_blog' do
-  index = params[:b].to i
-  haml :full_blog_post, :locals => {:the_post => posts[index]}
+  haml :view_blog
 end
 
 post '/post_comment' do
