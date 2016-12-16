@@ -1,7 +1,9 @@
 %b{:class => "blog", :id => "message"} Creates a blog
 %html
-%form{:action => "post_blog", :method => "post"}
+%form{:action => "post_blog", :method => "get"}
   %br
+    %div{id: "post_blog_button"}
+      %input{:type => "submit", :id => "post_blog", :value => "Post Blog"}
     Author:
     %input{:type => "text", :name => "author"}
   %br
@@ -9,6 +11,6 @@
     %input{:type => "text", :name => "title"}
   %br
     Content:
-    %input{:type => "textarea", :name => "textarea"}
+    %input{:type => "text", :name => "content"}
   %br
     %input{:type => "submit", :id => "submit", :value => "submit"}

@@ -1,2 +1,9 @@
-name: ~name
-comment: ~sentence
+new_blog:
+  title: ~full_name
+  author: ~sentence
+  date: ~today
+  content: ~paragraphs(paragraph_count = 3)
+post_blog:
+  author: ~full_name
+  title: ~sentence
+  content: ~paragraphs(paragraph_count = 1)

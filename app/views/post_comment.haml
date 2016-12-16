@@ -1,9 +1,9 @@
 %b{:class => "blog", :id => "message"} Comment on my blog
 %html
   %head
-    %title Blog Comments
+    %title Commenting on Cottons Blog
   %body
-    %form{:action => "readBlog", :method => "post"}
+    %form{:action => "/post_comment", :method => "post"}
       %br
         Your Name:
         %input{:type => "text", :name => "name"}

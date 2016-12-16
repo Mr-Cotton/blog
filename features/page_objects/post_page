@@ -5,12 +5,16 @@ include PageObject::PageFactory
 class PostPage
   include PageObject
   include DataMagic
-
-  page_url 'http://localhost:4567/post_blog'
+  page_url 'localhost:4567/post_blog'
 
   text_field(:author, name: 'author')
-  text_field(:date, name: 'date')
   text_field(:title, name: 'title')
-  text_area(:post, name: 'post')
-  button(:submit, id: 'Cotton Blog')
+  text_field(:date, name: 'date')
+  text_area(:content, name: 'body')
+  button(:submit, :id => 'Cotton Blog')
+
+  def valid_new_post
+    populate_page_with data_for :new_blog
+    self.submit
+  end
 end

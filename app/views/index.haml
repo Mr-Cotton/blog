@@ -2,12 +2,12 @@
 
 %html
   %div{id: "post", class: "post"}
-    %p author:
-    %p title:
-    %p text:
+    %p author: Some Random Guy
+    %p title: Some book
+    %p text: Some stuff
   %br
 
-  %form{:action => "new_post", :method => "get"}
+  %form{:action => "new_blog", :method => "get"}
     %br
-      %div{id: "new_post_button"}
-        %input{:type => "submit", :id => "new_post", :value => "New"}
+      %div{id: "new_blog_button"}
+        %input{:type => "submit", :id => "new_blog", :value => "New"}
